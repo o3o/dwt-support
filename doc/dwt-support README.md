@@ -10,9 +10,9 @@ I would like to acknowledge all who have contributed to the [d-widget-toolkit](h
  
 ##Index
 
-		/doc  -  How to docs
+>/doc  -  How to docs
 
 ##Ideas
 
-		/eclipse  -  Configuring DWT in Eclipse
-		/windows  -  Clone and build DWT on Windows
+>/eclipse  -  Configuring DWT in Eclipse
+/windows  -  Clone and build DWT on Windows
