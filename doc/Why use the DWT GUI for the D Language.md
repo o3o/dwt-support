@@ -2,7 +2,7 @@
 
 ##DWT Advantages:
 1. Free: Zero cost or royalty, but Donations welcome on [eclipse.org](https://eclipse.org/swt)
-2. Open Source: Eclipse Public License, see FAQ: eclipse.org/legal
+2. Open Source: Eclipse Public License, see the [FAQ](https://eclipse.org/legal)
 3. Easy to Use: Mature, stable, and well documented
 4. Easy to Learn: Intuitive GUI, with many working examples
 5. Easy to Compile: compiles into native machine code accessing Windows libraries
