@@ -2,7 +2,7 @@
 
 ##Acknowledgement
 I would like to acknowledge all who have contributed to the [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) project.
-**THANK YOU** for all your time and effort!
+Here is a big **THANK YOU** for all your time and effort!
 
 ##Objectives
  1. Help for new D programmers and hobbyists
