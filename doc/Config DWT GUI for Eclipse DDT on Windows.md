@@ -65,11 +65,12 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  - Copy the Git clone:
 	  - From: your local git repository `E:\DEV\Data\GitHub\dwt`
 	  - To: your local lib directory `E:\DEV\Libs\dwt`
-- Open a command window in your local lib directory:
+ - Open a command window in your local lib directory:
  
 	```dos
 	E:\DEV\Libs\dwt>
 	```
+
  - Enter the rdmd build command, then press ENTER to execute:
  
 	```dos
@@ -79,19 +80,19 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  - You should see the following command line output during the short build process:
 
 	```dos
-	    E:\DEV\Libs\dwt> rdmd build.d base swt
-		(in E:\DEV\Libs\dwt)
-		Building dwt-base
-		workdir=>E:\DEV\Libs\dwt\base\src
-		dmd.exe @E:\DEV\Libs\dwt\rsp
-		dmd.exe @E:\DEV\Libs\dwt\rsp > E:\DEV\Libs\dwt\olog.txt
-		Building org.eclipse.swt.win32.win32.x86
-		workdir=>E:\DEV\Libs\dwt\org.eclipse.swt.win32.win32.x86\src
-		dmd.exe @E:\DEV\Libs\dwt\rsp
-		dmd.exe @E:\DEV\Libs\dwt\rsp > E:\DEV\Libs\dwt\olog.txt
-	    E:\DEV\Libs\dwt>
+	E:\DEV\Libs\dwt> rdmd build.d base swt
+	(in E:\DEV\Libs\dwt)
+	Building dwt-base
+	workdir=>E:\DEV\Libs\dwt\base\src
+	dmd.exe @E:\DEV\Libs\dwt\rsp
+	dmd.exe @E:\DEV\Libs\dwt\rsp > E:\DEV\Libs\dwt\olog.txt
+	Building org.eclipse.swt.win32.win32.x86
+	workdir=>E:\DEV\Libs\dwt\org.eclipse.swt.win32.win32.x86\src
+	dmd.exe @E:\DEV\Libs\dwt\rsp
+	dmd.exe @E:\DEV\Libs\dwt\rsp > E:\DEV\Libs\dwt\olog.txt
+	E:\DEV\Libs\dwt>
 	```
-	
+
  - Create a simple DUB Project, "Hellow World" 
  - Eclipse with DDT: File, New, Other, D, DUB Project, press Next,
  - Enter Project name: `hello-dwt`, press Finish
