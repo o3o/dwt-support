@@ -40,7 +40,7 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  - Download DMD from [dlang.org](https://www.dlang.org), press `Install.exe`
  - test version: DMD32 D Compiler v2.073.0
 1. Install DUB
- - Download DUB from  [dlang.org](https://www.code.dlang.org/download), click `DUB 1.2.0 installer for Windows (X86`)
+ - Download DUB from  [dlang.org](https://www.code.dlang.org/download), click `DUB 1.2.0 installer for Windows (X86`
  - test version: 1.2.0, built on Jan 22 2017
 1. Install Eclipse
  - Download from [eclipse.org](https://www.eclipse.org/downloads), click "Get Eclipe Neon", press the orange button `DOWNLOAD 64 BIT`
@@ -63,9 +63,9 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  - Do ***not*** import into the project, press Cancel
 1. Build the DWT library on your local PC
  - Copy the Git clone:
- -- From: your local git repository `E:\DEV\Data\GitHub\dwt`
- -- To: your local lib directory `E:\DEV\Libs\dwt`
- - Open a command window in your local lib directory:
+	  - From: your local git repository `E:\DEV\Data\GitHub\dwt`
+	  - To: your local lib directory `E:\DEV\Libs\dwt`
+- Open a command window in your local lib directory:
  
 	```dos
 	E:\DEV\Libs\dwt>
