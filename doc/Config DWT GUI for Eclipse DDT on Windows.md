@@ -177,4 +177,4 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  - Here is the impact on the exe size with my Windows environment:
 	  - "debug" version of hellow-dwt = 2,580 KB
 	  - "release" version of hellow-dwt = 714 KB
-	  - After upx --brute compression = 615 KB *(upx not included in this document)*
+	  - After upx --brute compression = 615 KB *(the use of upx is not included in this document)*
