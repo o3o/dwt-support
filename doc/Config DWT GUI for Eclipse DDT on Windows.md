@@ -116,7 +116,7 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
 	```
 	
  - Edit the above for your local lib path: e:\\dev\\libs\\dwt)
- - Note the required space before the dash in lines 7 and 8 below: " -L+e..."
+ - Note the required space before the dash in lines 7 and 8 above: " -L+e..."
 
 1. Enter the D code for a simple "Hellow World" window using DWT
  - In the `hello-dwt` project:
