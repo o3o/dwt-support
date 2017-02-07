@@ -6,7 +6,7 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) (DWT) on Git
 * The `README.markdown` document
 * The `build.d` file
 
-Note: `E:\DEV\lib\dwt` and `E:\DEV\lib\dwt64` are the cloned copies of DWT from GitHub in my test environment. Edit to match your local PC environment
+Note: References to `E:\DEV\lib\dwt` and `E:\DEV\lib\dwt64` below are the cloned copies of DWT from GitHub in my test environment. Edit to match your local PC environment
 
 ##DWT 32 bit Notes
 1. Requires [DMD](https://www.dlang.org) and [DWT](https://www.github.com/d-widget-toolkit/dwt)
