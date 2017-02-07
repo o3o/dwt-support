@@ -1,13 +1,24 @@
 # Config DWT GUI for Eclipse DDT on Windows
+
+##Reference
+
+The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
+ * The `README.markdown` document
+ * The `build.d` file
+
 ## Introduction
+
 **DWT - D Widget Toolkit**
+
 1. DWT is a library for creating cross-platform GUI applications
-2. It's a port of the SWT Java library from Eclipse
-3. DWT is compatible with D2 using the standard library (Phobos)
+1. It's a port of the SWT Java library from Eclipse
+1. DWT is compatible with D2 using the standard library (Phobos)
+
 ## Objectives
- 1, Help new D programmers and hobbyists to config DWT for Eclipse DDT on Windows
+ 1. Help new D programmers and hobbyists to config DWT for Eclipse DDT on Windows
  2. Make it more fun and enjoyable to learn D with a stable and easy to use gui
  3. Advance the use of the D language
+ 
 ## High-Level Overview
 1. Start with Windows 10 Home (or other compatible Windows version)
 2. Install the DMD D2 language compiler
@@ -21,9 +32,11 @@
 10. Enter the D code for a simple "Hellow World" window using DWT
 11. Run hello-dwt. If successful, a simple "Hello World!" window will appear
 12. Modify the Build Target for a "release" build version
+
 ## Step-by-Step Instructions
 1. Start with Windows 10 Home (or other compatible Windows version)
 	*test version: 10.0.14393 Build 14393*
+
 2. Install DMD
 	Download DMD from [dlang.org](https://www.dlang.org), press `Install.exe`
 	*test version: DMD32 D Compiler v2.073.0*
