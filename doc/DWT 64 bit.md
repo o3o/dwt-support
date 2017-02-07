@@ -47,7 +47,7 @@ Note: References to `E:\DEV\lib\dwt` and `E:\DEV\lib\dwt64` below are the cloned
 	```
 
 ##64 bit Link Errors
-If you get an error that the linker cannot find `advapi32.lib', try the following:
+If you get an error that the linker cannot find `advapi32.lib`, try the following:
 
 1. add the -v (verbose) switch to the build command above
 1. Look for the LIBPATH where the MVS linker is looking for the Windows libs
