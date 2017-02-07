@@ -45,7 +45,24 @@ Note: References to `E:\DEV\lib\dwt` and `E:\DEV\lib\dwt64` below are the cloned
 	  "-Lorg.eclipse.swt.win32.win32.x86.lib" "-Ldwt-base.lib" ^
 	  -L/SUBSYSTEM:Windows -L/ENTRY:mainCRTStartup -L/RELEASE -m64 -run
 	```
+
+##64 bit Link Errors
+If you get an error that the linker cannot find `advapi32.lib', try the following:
+
+1. add the -v (verbose) switch to the build command above
+1. Look for the LIBPATH where the MVS linker is looking for the Windows libs
+1. Example: `/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\\lib\10.0.10586.0\ucrt\x64"`
+1. I have installed and removed MVS and components, so this path no longer existed on my PC
+1. As a temporoary work-around, I did copid an existing path:
+
+	`/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\\lib\10.0.14393\ucrt\x64"`
 	
+1. Pasted it and renamed to what my linker needed:
+
+	`/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\\lib\10.0.10586\ucrt\x64"`
+
+1. Do this at your own risk, the proper action for me is to clean up my MVS install
+
 ##How to check if your app is 32 or 64 bit
 1. In Windows, right-click on the exe file you want to check
 1. Select “Properties”
