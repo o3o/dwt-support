@@ -1,5 +1,4 @@
 #Key Differences Between DWT 32 and 64 bit
-
 ##Reference
 1. The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
 2. The `README.markdown` document
