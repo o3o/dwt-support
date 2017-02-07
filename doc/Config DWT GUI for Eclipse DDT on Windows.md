@@ -35,22 +35,22 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
 
 ## Step-by-Step Instructions
 1. Start with Windows 10 Home (or other compatible Windows version)
- - test version: 10.0.14393 Build 14393
+ - *test version: 10.0.14393 Build 14393*
 1. Install DMD
  - Download DMD from [dlang.org](https://www.dlang.org), press `Install.exe`
- - test version: DMD32 D Compiler v2.073.0
+ - *test version: DMD32 D Compiler v2.073.0*
 1. Install DUB
  - Download DUB from  [dlang.org](https://www.code.dlang.org/download), click `DUB 1.2.0 installer for Windows (X86`
- - test version: 1.2.0, built on Jan 22 2017
+ - *test version: 1.2.0, built on Jan 22 2017*
 1. Install Eclipse
  - Download from [eclipse.org](https://www.eclipse.org/downloads), click "Get Eclipe Neon", press the orange button `DOWNLOAD 64 BIT`
  - This will download the installer: `eclipse-inst-win64.exe`
  - Select **"Eclipse IDE for Java Developers"**
- - test version: Neon.2 Release (4.6.2), Build id: 20161208-0600
+ - *test version: Neon.2 Release (4.6.2), Build id: 20161208-0600*
 1. Install DDT plugin
  - In Eclipse: Help, Eclipse Marketplace, Search, Find: DDT, Install
- - test version: D Development Tools 1.0.3.v201611011228
  - Do **not** exit Eclipse
+ - *test version: D Development Tools 1.0.3.v201611011228*
 1. Clone the DWT repository from GitHub
  - Download from [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt), press the green button, `Clone or download`
  - *(do not download because it will download the folders only, not everything)*
@@ -65,7 +65,7 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  - Copy the Git clone:
  
 	  - From: your local git repository `E:\DEV\Data\GitHub\dwt`
-	  - To: your local lib directory `E:\DEV\Libs\dwt`
+	  - To:   your local lib directory  `E:\DEV\Libs\dwt`
 	  
  - Open a command window in your local lib directory:
  
@@ -173,7 +173,7 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
 	```
 
  - Now, when you use the "unittest" build target, it will actually build a "release" version
- - if you need the "unittest", simply rename to "unittest-disable" in the dub.json
+ - If you need the "unittest", simply rename to "unittest-disable" in the dub.json
  - Here is the impact on the exe size with my Windows environment:
 	  - "debug" version of hellow-dwt = 2,580 KB
 	  - "release" version of hellow-dwt = 714 KB
