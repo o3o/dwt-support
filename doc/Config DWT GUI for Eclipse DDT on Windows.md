@@ -3,12 +3,13 @@
 ##Reference
 
 The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
- * The `Building` instructions from the `README.markdown` document
+ * The "Building" instructions from the `README.markdown` document
  * The `build.d` file
 
 ## Introduction
 
 **DWT - D Widget Toolkit**
+
 1. DWT is a library for creating cross-platform GUI applications
 1. It's a port of the SWT Java library from Eclipse
 1. DWT is compatible with D2 using the standard library (Phobos)
@@ -20,12 +21,12 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  
 ## High-Level Overview
 1. Start with Windows 10 Home (or other compatible Windows version)
-1. Install the DMD D2 language compiler
-1. Install the DUB D2 language package manager
+1. Install DMD, the D2 language compiler
+1. Install DUB, the D2 language package manager
 1. Install Eclipse
 1. Install the Eclipse DDT plugin
 1. Clone the DWT repository from GitHub
-1. Build the DWT library on your local PC
+1. Build the cloned DWT library on your local PC
 1. Create a new DUB project in Eclipse with DDT called "hello-dwt"
 1. Edit the dub.json file to link with the DWT library on your local PC
 1. Enter the D code for a simple "Hellow World" window using DWT
