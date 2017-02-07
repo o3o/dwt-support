@@ -63,8 +63,10 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  - Do ***not*** import into the project, press Cancel
 1. Build the DWT library on your local PC
  - Copy the Git clone:
+ 
 	  - From: your local git repository `E:\DEV\Data\GitHub\dwt`
 	  - To: your local lib directory `E:\DEV\Libs\dwt`
+	  
  - Open a command window in your local lib directory:
  
 	```dos
@@ -113,11 +115,11 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
 	}
 	```
 	
-	>*edit the above for your local lib path: e:\\dev\\libs\\dwt)*
-	>*note the required space before the dash in lines 7 and 8 below: " -L+e..."*
+ - Edit the above for your local lib path: e:\\dev\\libs\\dwt)
+ - Note the required space before the dash in lines 7 and 8 below: " -L+e..."
 
 1. Enter the D code for a simple "Hellow World" window using DWT
- - in the `hello-dwt` project:
+ - In the `hello-dwt` project:
  - Open the `app.d` file, and replace the entire contents with the following:
 	
 	```d
@@ -173,8 +175,6 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  - Now, when you use the "unittest" build target, it will actually build a "release" version
  - if you need the "unittest", simply rename to "unittest-disable" in the dub.json
  - Here is the impact on the exe size with my Windows environment:
- - - "debug" version of hellow-dwt = 2,580 KB
- - - "release" version of hellow-dwt = 714 KB
- - - After upx --brute compression = 615 KB *(upx not included in this document)*
-
-
+	  - "debug" version of hellow-dwt = 2,580 KB
+	  - "release" version of hellow-dwt = 714 KB
+	  - After upx --brute compression = 615 KB *(upx not included in this document)*
