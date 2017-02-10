@@ -21,8 +21,7 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  
 ## High-Level Overview
 1. Start with Windows 10 Home (or other compatible Windows version)
-1. Install DMD, the D2 language compiler
-1. Install DUB, the D2 language package manager
+1. Install DMD, the D2 language compiler (includes DUB, the D2 language package manager)
 1. Install Eclipse
 1. Install the Eclipse DDT plugin
 1. Clone the DWT repository from GitHub
@@ -36,12 +35,9 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
 ## Step-by-Step Instructions
 1. Start with Windows 10 Home (or other compatible Windows version)
  - *test version: 10.0.14393 Build 14393*
-1. Install DMD
+1. Install DMD (includes DUB)
  - Download DMD from [dlang.org](https://www.dlang.org), press `Install.exe`
  - *test version: DMD32 D Compiler v2.073.0*
-1. Install DUB
- - Download DUB from  [dlang.org](https://www.code.dlang.org/download), click `DUB 1.2.0 installer for Windows (X86`
- - *test version: 1.2.0, built on Jan 22 2017*
 1. Install Eclipse
  - Download from [eclipse.org](https://www.eclipse.org/downloads), click "Get Eclipe Neon", press the orange button `DOWNLOAD 64 BIT`
  - This will download the installer: `eclipse-inst-win64.exe`
