@@ -1,5 +1,9 @@
 /*
-* Writes each Snippet module name and description to a text file
+ * Copyright (C) 2017 by jasc2v8 at yahoo dot com
+ * License: http://www.boost.org/LICENSE_1_0.txt
+ *
+ * Writes each DWT Snippet module name and description to a text file
+ *
 */
 
 module SnippetsIndexer;
