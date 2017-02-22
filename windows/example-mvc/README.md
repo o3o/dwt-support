@@ -4,9 +4,11 @@
 
 The objective is to make the code modular and easier to manage
 
-model       = app.d
-view        = gui.d
-controller  = app.d
+model      = app.d
+
+view       = gui.d
+
+controller = app.d
 
 ##Objectives
  1. Help for new D programmers and hobbyists
