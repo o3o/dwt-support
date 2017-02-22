@@ -12,9 +12,6 @@ Here is a big **THANK YOU** for all your time and effort!
  
 ##Index
 
-		/doc  -  How to docs
-
-##Ideas
-
-		/eclipse  -  Configuring DWT in Eclipse
-		/windows  -  Clone and build DWT on Windows
+		/doc      -  How to docs
+		/res      -  Resources
+		/windows  -  Windows Examples
