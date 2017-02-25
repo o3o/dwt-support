@@ -21,8 +21,6 @@ import org.eclipse.swt.all;
 
 //Win32 imports
 import org.eclipse.swt.internal.win32.OS;
-import org.eclipse.swt.internal.C;
-import org.eclipse.swt.internal.Library;
 
 Image image;
 
