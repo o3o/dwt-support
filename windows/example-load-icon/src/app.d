@@ -1,3 +1,15 @@
+/*
+ * Copyright (C) 2017 by jasc2v8 at yahoo dot com
+ * License: http://www.boost.org/LICENSE_1_0.txt
+ *
+ * Example of how to load an icon from;
+ * 1. A file "icon.ico" 
+ * 2. A Program extension from the Windows registry, e.g. "*.inf"
+ * 3. A linked resource from the exe itsself
+ *
+/*
+
+I learned how to add an icon to the exe with a compiled Resource file.
 module loadicon;
 
 //TODO: START WITH EXE ICON!, add 2nd row just for learning
