@@ -11,8 +11,6 @@
 
 module loadicon;
 
-//TODO: START WITH EXE ICON!, add 2nd row just for learning
-
 //d lang imports
 import std.stdio;			//writeln
 import std.conv;			//to!string
