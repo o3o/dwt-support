@@ -9,7 +9,6 @@
  *
 /*
 
-I learned how to add an icon to the exe with a compiled Resource file.
 module loadicon;
 
 //TODO: START WITH EXE ICON!, add 2nd row just for learning
