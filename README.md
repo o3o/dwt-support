@@ -14,4 +14,4 @@ Here is a big **THANK YOU** for all your time and effort!
 
 		/doc      -  How to docs
 		/res      -  Resources
-		/windows  -  Windows Examples
+		/windows  -  Demos and Examples for Windows
