@@ -22,7 +22,7 @@ import core.stdc.stdlib; //exit
 //global variables
 string[] buffer;
 int count = 0;	//count number of files processed
-const string INDEX_FILE = "snippets-index.txt";
+const string INDEX_FILE = "snippets_index.txt";
 
 //start
 void main()
