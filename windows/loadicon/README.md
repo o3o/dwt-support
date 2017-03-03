@@ -10,10 +10,12 @@
 
 ###Overview
 
-This is a demo of the various methods to extract and load icons in DWT
-It is written in modular form so each function can be reused in your code
+This is a demo of the various methods to extract and load icons in DWT.
+
+It is written in modular form so each function can be reused in your code.
 
 The key takeway is the Win32 API LoadImage function, used to -
+
 	set the Shell icon from the program icon linked with icons.res in this exe file
 
 1. Edit \res\icons.rc to include your icons
