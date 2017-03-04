@@ -146,30 +146,11 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) on GitHub
  - Eclispe DDT comes with only two Build Targets - default and unittest
  - The default target builds a "debug" version, and the unittest target builds a "unittest" version
  - Currently, you cannot create a build rarget "release", so here is a work-around:
- - In the `hello-dwt` project: modify the `dub.json` to add `"buildTypes"` as follows:
- 
-	```json
-	{
-	"name": "hello-dwt",
-	"description": "Hello World - A minimal DUB bundle.",
-	"buildTypes":
-	   {
-	    "unittest":
-	    {
-	     "buildOptions": ["releaseMode", "optimize", "inline"]
-	    }
-	   },
-	"dflags": ["-Ie:\\dev\\libs\\dwt\\imp\\", 
-		"-Je:\\dev\\libs\\dwt\\res\\"],
-	"lflags": ["-L+e:\\dev\\libs\\dwt\\lib\\",
-		" -L+e:\\dev\\libs\\dwt\\lib\\org.eclipse.swt.win32.win32.x86.lib",
-		" -L+e:\\dev\\libs\\dwt\\lib\\dwt-base.lib",
-		" /SUBSYSTEM:WINDOWS:4.0"]
-	}
-	```
-
- - Now, when you use the "unittest" build target, it will actually build a "release" version
- - If you need the "unittest", simply rename to "unittest-disable" in the dub.json
+ - Eclipse menu: Run, Run Configurations, double-click on "D Application"
+ - Build Command: UNcheck "Use Build Target Settings"
+ - Default is: ${DUB_TOOL_PATH} build
+ - Modfiy  to: ${DUB_TOOL_PATH} build -b=release-nobounds
+ - Note that by default, a DUB release build is -release -O -inline, we just added the nobounds
  - Here is the impact on the exe size with my Windows environment:
 	  - "debug" version of hellow-dwt = 2,580 KB
 	  - "release" version of hellow-dwt = 714 KB
