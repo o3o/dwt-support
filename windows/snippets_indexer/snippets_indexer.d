@@ -1,9 +1,8 @@
 /*
- * Copyright (C) 2017 by jasc2v8 at yahoo dot com
- * License: http://www.boost.org/LICENSE_1_0.txt
- *
- * Writes each DWT Snippet module name and description to a text file
- *
+ Writes each Snippet module name and description to a text file
+ 
+ Run using rdmd snippets_indexer.d
+ 
 */
 
 module SnippetsIndexer;
@@ -17,7 +16,7 @@ import std.path;
 import std.process;
 import std.range;
 import std.string;
-import core.stdc.stdlib; //exit
+import core.runtime;
 
 //global variables
 string[] buffer;
@@ -30,8 +29,8 @@ void main()
 	
 	// if snippets subdirectory does not exist, then exit
 	if (!exists("snippets")) {
-		writeln("snippets subdirecotry does NOT exist, exiting...");
-		exit(0);
+		writeln("snippets subdirectory does NOT exist, exiting...");
+		Runtime.terminate();
 	}
 	
 	//get a list of all *.d files in .\snippets
@@ -57,38 +56,40 @@ void ProcessFile(string filename)
 	
 	//loop through file
 	int index;
-	string line, module_name, module_description;
+	string line, snippetNumber, snippetDescription;
 	while ((line = snippet.readln()) !is null)
 	{
             //find the module name
             index = indexOf(line, "module");
             if (index != -1)
             {
-	       		int dot = lastIndexOf(line,".");
-				if (dot == -1) {
-		        	module_name = line[dot+8..$];
-            	} else {
-		        	module_name = line[dot+1..$];
-            	}
+				//find the snippet number	
+				int i = 0;
+				while (!isNumeric(line[i..i+1])) {
+					i++;
+				}
+				
+				//get the snippet number, strip the semicolon at the end
+	        	snippetNumber = line[i..$-1];
 
 				//now find the description	        	
-	        	int i = 0;
-				while (i < 20)
+	        	int j = 0;
+				while (j < 20)
 				{
 					line = snippet.readln();
 					index = indexOf(line, " * ");
 				    if (index != -1)
 				    {
 						if (index == 1){
-							module_description = line[index+3..$];
+							snippetDescription = line[index+3..$];
 						} else {
-							module_description = line[index+2..$];
+							snippetDescription = line[index+2..$];
 						}
 						break;
 				    }
-				    i++;
+				    j++;
 				}
-				string tmp = FixNumber(chop(module_name)) ~ chop(module_description);
+				string tmp = padNumber(chop(snippetNumber)) ~ chop(snippetDescription);
 				buffer ~= tmp;
 				count++;
 				break;
@@ -100,6 +101,9 @@ void ProcessFile(string filename)
 	
 	//sort the index
 	sort(buffer);
+	
+	//now add the numbered index
+	
 	
 	//if the index file exists, rename to .bak
 	if (exists(INDEX_FILE)) {
@@ -123,9 +127,10 @@ void ProcessFile(string filename)
     	file.writeln("Item, Snippet Number, Description");
     	file.writeln("=================================");
     	
-		foreach (int i, string l; buffer)
+		foreach (int i, lineOutput; buffer)
 		{
-	        file.writeln(l);
+	        file.writeln(padNumber(to!string(i+1)) ~ " " ~ lineOutput);
+	        //file.writeln(to!string(i+1) ~ " " ~ lineOutput);
 	    }
     }
     catch (FileException ex)
@@ -134,8 +139,8 @@ void ProcessFile(string filename)
     }
     
  }
-private string FixNumber(string line) {
-	
+private string padNumber(string line) {
+
 	//find the first number	
 	int i = 0;
 	while (!isNumeric(line[i..i+1])) {
@@ -143,17 +148,11 @@ private string FixNumber(string line) {
 	}
 
 	//pad with leading zeros
-	string numb = "000" ~ line[i..$-1];
+	string numb = "000" ~ line[0..$];
 
 	//keep the last 3 digits
 	numb = numb[$-3..$];
 
-	//pad count with leading zeros
-	string c = "000" ~ to!string(count+1);
-	
-	//keep the last 3 digits
-	c = c[$-3..$];	
-	
-	return c ~ " " ~ numb;
+	return numb;
 	
 }

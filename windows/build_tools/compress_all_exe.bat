@@ -7,10 +7,10 @@ REM must have upx in your PATH
 for %%f in (*.exe) do (
 
 	REM for nomal compression
-	    upx.exe %%f -of%%f_upx.exe
+	    upx.exe %%f -o %%f_upx.exe
 
 	REM for maximum compression
-	REM upx.exe --brute %%f -of%%f_upx_brute.exe
+	REM upx.exe --brute %%f -o %%f_upx_brute.exe
 )
 
 pause
