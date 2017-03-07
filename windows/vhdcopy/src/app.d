@@ -48,9 +48,10 @@ enum string VBManage32 = r"C:\Program Files (x86)\Oracle\\VirtualBox\VboxManage.
 enum string VBManage64 = r"C:\Program Files\Oracle\VirtualBox\VboxManage.exe";
 
 //shared memory between the gui process and the thread
-__gshared Display display;
-__gshared bool jobCancel = false, jobDone = true;
+//per the D wiki, __gshared is discouraged, except for C bindings
+shared bool jobCancel = false, jobDone = true;
 
+Display display;
 Shell shell;
 Text txtSource, txtTarget, txtStatus;
 Button btnCopy, btnSet, btnCancel;
