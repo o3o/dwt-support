@@ -2,6 +2,6 @@
 
 echo Start DUB Build...
 
-dub -b=release
+dub -b=release-nobounds
 
 echo End DUB Build.
