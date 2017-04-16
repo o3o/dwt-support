@@ -1,13 +1,13 @@
 {
-	"comment": "Compiles your custom resource file (icon, XP theme, version)",
-	
+	"comment": "Compiles the default DWT resource file (SWT logo, XP theme, no version",
+
     "name": "hello_dwt",
 
     "description": "Hello world example for DWT",
     
     "targetType": "executable",
 
-	"sourceFiles": ["res\\resource.res"],
+	"sourceFiles": ["d:\\dev\\libs\\dwt\\win-res\\resource.res"],
 
     "dflags": ["-Id:\\dev\\libs\\dwt\\imp\\", 
 	    "-Jd:\\dev\\libs\\dwt\\res\\"],

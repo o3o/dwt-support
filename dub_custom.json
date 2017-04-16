@@ -1,5 +1,5 @@
 {
-	"comment": "Compiles your custom resource file (icon, XP theme, version)",
+	"comment": "Compiles your custom resource file (icon, theme, version)",
 	
     "name": "hello_dwt",
 
