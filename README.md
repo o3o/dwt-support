@@ -12,11 +12,12 @@ Here is a big **THANK YOU** for all your time and effort!
 
 ## Hello World
 A hello_dwt.d file is included as an example.
+
 Use build_DUB, build_DMD, or simply use dub with no arguments to compile.
+
 The dub.json files use either your custom resource file, or the DWT default.
 	
 ## Index
-
 		/doc      -  How to docs
 		/res      -  Resources
 		/src      -  hello_dwt.d example
