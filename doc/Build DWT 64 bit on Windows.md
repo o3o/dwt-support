@@ -1,6 +1,6 @@
-#Key Differences Between DWT 32 and 64 bit
+# Key Differences Between DWT 32 and 64 bit
 
-##Reference
+## Reference
 The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) (DWT) on GitHub:
 
 * The `README.markdown` document
@@ -8,12 +8,12 @@ The [d-widget-toolkit](https://www.github.com/d-widget-toolkit/dwt) (DWT) on Git
 
 Note: References to `E:\DEV\lib\dwt` and `E:\DEV\lib\dwt64` below are the cloned copies of DWT from GitHub in my test environment. Edit to match your local PC environment
 
-##DWT 32 bit Notes
+## DWT 32 bit Notes
 1. Requires [DMD](https://www.dlang.org) and [DWT](https://www.github.com/d-widget-toolkit/dwt)
 1. The DWT clone includes the windows libs `E:\DEV\lib\dwt\lib\advapi32.lib` etc.
 1. The DMD linker links the DWT windows libs to build 32 bit GUI apps
 
-##DWT 64 bit Notes
+## DWT 64 bit Notes
 1. Requires DMD, DWT, and the Microsoft Visual Studio (MVS) environment
 1. The DWT clone build process removes the Windows libs `E:\DEV\lib\dwt64\lib\advapi32.lib` etc.
 1. The MVS linker links the installed Windows 64 bit libs to build 64 bit GUI apps
@@ -25,7 +25,7 @@ Note: References to `E:\DEV\lib\dwt` and `E:\DEV\lib\dwt64` below are the cloned
 1. The MVS tools are not required to build the DWT library
 1. However, the MVS linker is required for DMD to build and link 64 bit DWT GUI apps
 
-##Building DWT 64 bit
+## Building DWT 64 bit
 1. Install [DMD](https://www.dlang.org) , [DWT](https://www.github.com/d-widget-toolkit/dwt), and the Microsoft Visual Studio (MVS) environment (web search for the current download location)
 2. Alternatively, instead of the huge MVS environment, you can install the significantly smaller Visual C++ 2015 x64 Native Build Tools, currenlty located [here.](http://landinghub.visualstudio.com/visual-cpp-build-tools) Be sure to read the notes about the compatiablility between this install and the full Visual Studio suite.
 3. Clone the DWT from GitHub library to your local PC, and identify it as the 64 bit library `E:\DEV\lib\dwt64`
@@ -46,7 +46,7 @@ Note: References to `E:\DEV\lib\dwt` and `E:\DEV\lib\dwt64` below are the cloned
 	  -L/SUBSYSTEM:Windows -L/ENTRY:mainCRTStartup -L/RELEASE -m64 -run
 	```
 
-##64 bit Link Errors
+## 64 bit Link Errors
 If you get an error that the linker cannot find `advapi32.lib`, try the following:
 
 1. add the -v (verbose) switch to the build command above
@@ -63,7 +63,7 @@ If you get an error that the linker cannot find `advapi32.lib`, try the followin
 
 1. Do this at your own risk, the proper action for me is to clean up my MVS install
 
-##How to check if your app is 32 or 64 bit
+## How to check if your app is 32 or 64 bit
 1. In Windows, right-click on the exe file you want to check
 1. Select “Properties”
 1. Click the tab “Compatibility”
